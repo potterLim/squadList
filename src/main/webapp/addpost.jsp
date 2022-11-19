@@ -8,14 +8,11 @@
 
 <% request.setCharacterEncoding("utf-8"); %>
 
-<%--<jsp:useBean id="u" class="com.example.bean.BoardVO" />--%>
-<%--<jsp:setProperty property="*" name="u"/>--%>
-
 <%
     BoardDAO boardDAO = new BoardDAO();
     FileUpload upload = new FileUpload();
     BoardVO u = upload.uploadPhoto(request);
-    int i = boardDAO.insertContact(u);
+    int i = boardDAO.insertBoard(u);
     String msg = "데이터 추가 성공 !";
     if(i == 0) msg = "[에러] 데이터 추가 ";
 %>

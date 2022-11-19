@@ -7,7 +7,7 @@
     if (sid != ""){
         int id = Integer.parseInt(sid);
         BoardVO u = new BoardVO();
-        u.setSeq(id);
+        u.setNo(id);
         BoardDAO boardDAO = new BoardDAO();
         String filename = boardDAO.getPhotoFilename(id);
         if (filename != null){
