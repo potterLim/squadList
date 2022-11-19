@@ -5,11 +5,11 @@ import java.util.Date;
 public class BoardVO {
     private int no;
     private String name;
-    private int age;
+    private String age;
     private String position;
     private String email;
     private String milNum;
-    private Date birth;
+    private String birth;
     private String photoPath;
     private Date regdate;
 
@@ -30,11 +30,11 @@ public class BoardVO {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -62,11 +62,11 @@ public class BoardVO {
         this.milNum = milNum;
     }
 
-    public Date getBirth() {
+    public String getBirth() {
         return birth;
     }
 
-    public void setBirth(Date birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
 
